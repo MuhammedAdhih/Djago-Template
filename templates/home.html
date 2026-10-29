@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content%}
+    <h1>Home page</h1>
+    <l>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque illo, repudiandae enim voluptatum eum, quam aperiam ratione aliquam vel, deleniti non exercitationem! Et voluptatem totam cupiditate architecto fugiat, nemo eveniet?</l>
+
+    <p>name : {{name}}</p>
+    <p>course : {{course}}</p>
+    <p>status : {{is_loggedIn}}</p>
+
+    {% if is_loggedIn%}
+         <h1>welcome {{name}}</h1>
+    {% else %}
+         <h1> please login...</h1>
+    {% endif %}
+{% endblock %}
